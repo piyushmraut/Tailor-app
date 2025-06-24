@@ -2,17 +2,17 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { 
-  Calendar, 
-  Clock, 
-  User, 
-  ArrowLeft, 
-  Share2, 
-  Heart, 
-  BookOpen,
-  Star,
-  Award,
-  Eye
-} from 'lucide-react';
+  FiCalendar,
+  FiClock,
+  FiUser,
+  FiArrowLeft,
+  FiShare2,
+  FiHeart,
+  FiBookOpen,
+  FiStar,
+  FiAward,
+  FiEye
+} from 'react-icons/fi';
 import { blogPosts } from '../data/blogPosts';
 
 const BlogDetail = () => {
@@ -59,7 +59,7 @@ const BlogDetail = () => {
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center animate-fade-in">
           <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <BookOpen className="w-12 h-12 text-gray-400" />
+            <FiBookOpen className="w-12 h-12 text-gray-400" />
           </div>
           <h1 className="text-4xl font-serif text-gray-800 mb-4">Post Not Found</h1>
           <p className="text-gray-600 mb-8">The blog post you're looking for doesn't exist.</p>
@@ -67,7 +67,7 @@ const BlogDetail = () => {
             onClick={() => window.history.back()}
             className="inline-flex items-center px-6 py-3 bg-[#BE9278] text-white rounded-lg hover:bg-[#A67C5A] transition-all duration-300 transform hover:scale-105"
           >
-            <ArrowLeft className="w-4 h-4 mr-2" />
+            <FiArrowLeft className="w-4 h-4 mr-2" />
             Go Back
           </button>
         </div>
@@ -91,7 +91,7 @@ const BlogDetail = () => {
           onClick={() => window.history.back()}
           className="group flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110"
         >
-          <ArrowLeft className="w-5 h-5 text-gray-700 group-hover:text-[#BE9278] transition-colors duration-300" />
+          <FiArrowLeft className="w-5 h-5 text-gray-700 group-hover:text-[#BE9278] transition-colors duration-300" />
         </button>
       </div>
 
@@ -103,10 +103,10 @@ const BlogDetail = () => {
             isLiked ? 'bg-red-500 text-white' : 'bg-white/90 backdrop-blur-sm text-gray-700'
           }`}
         >
-          <Heart className={`w-5 h-5 transition-all duration-300 ${isLiked ? 'fill-current' : ''}`} />
+          <FiHeart className={`w-5 h-5 transition-all duration-300 ${isLiked ? 'fill-current' : ''}`} />
         </button>
         <button className="group flex items-center justify-center w-12 h-12 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110">
-          <Share2 className="w-5 h-5 text-gray-700 group-hover:text-[#BE9278] transition-colors duration-300" />
+          <FiShare2 className="w-5 h-5 text-gray-700 group-hover:text-[#BE9278] transition-colors duration-300" />
         </button>
       </div>
 
@@ -115,11 +115,11 @@ const BlogDetail = () => {
         <div className="mb-12 animate-fade-in-up">
           <div className="flex items-center justify-between mb-6">
             <span className="inline-flex items-center text-xs font-medium text-white bg-gradient-to-r from-[#BE9278] to-[#D4A574] px-3 py-1.5 rounded-full shadow-lg animate-bounce-in">
-              <Star className="w-3 h-3 mr-1" />
+              <FiStar className="w-3 h-3 mr-1" />
               {post.category}
             </span>
             <div className="flex items-center text-sm text-gray-500 space-x-2">
-              <Eye className="w-4 h-4" />
+              <FiEye className="w-4 h-4" />
               <span>2.4k views</span>
             </div>
           </div>
@@ -131,17 +131,17 @@ const BlogDetail = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center text-sm text-gray-600 space-x-6">
               <div className="flex items-center space-x-2">
-                <Calendar className="w-4 h-4 text-[#BE9278]" />
+                <FiCalendar className="w-4 h-4 text-[#BE9278]" />
                 <span>{post.date}</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Clock className="w-4 h-4 text-[#BE9278]" />
+                <FiClock className="w-4 h-4 text-[#BE9278]" />
                 <span>{post.readTime}</span>
               </div>
             </div>
             <div className="flex items-center space-x-2 text-sm text-gray-500">
               <div className="flex items-center space-x-1">
-                <Heart className="w-4 h-4 text-red-500" />
+                <FiHeart className="w-4 h-4 text-red-500" />
                 <span>124</span>
               </div>
             </div>
@@ -173,7 +173,7 @@ const BlogDetail = () => {
           <div className="bg-gradient-to-r from-gray-50 to-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-2xl font-serif text-gray-800 flex items-center">
-                <Award className="w-6 h-6 text-[#BE9278] mr-2" />
+                <FiAward className="w-6 h-6 text-[#BE9278] mr-2" />
                 About the Author
               </h3>
             </div>
@@ -197,12 +197,12 @@ const BlogDetail = () => {
                   <h4 className="text-xl font-semibold text-gray-800">Sarah Johnson</h4>
                   <div className="flex items-center space-x-1">
                     {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-4 h-4 text-yellow-400 fill-current" />
+                      <FiStar key={i} className="w-4 h-4 text-yellow-400 fill-current" />
                     ))}
                   </div>
                 </div>
                 <p className="text-gray-600 mb-3 flex items-center">
-                  <User className="w-4 h-4 mr-2 text-[#BE9278]" />
+                  <FiUser className="w-4 h-4 mr-2 text-[#BE9278]" />
                   Master Tailor with 15 years experience
                 </p>
                 <p className="text-sm text-gray-600 leading-relaxed">
