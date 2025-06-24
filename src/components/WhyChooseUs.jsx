@@ -1,4 +1,4 @@
-import { Scissors, Ruler, Shirt, Package } from 'lucide-react';
+import { FaCut, FaRuler, FaTshirt, FaBoxOpen } from "react-icons/fa";
 
 const WhyChooseUs = () => {
   return (
@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
             Why Choose Our Tailoring Service?
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We’re more than just tailors — we’re artists of fit and fashion. Here's what sets us apart.
+            We're more than just tailors — we're artists of fit and fashion. Here's what sets us apart.
           </p>
         </div>
 
@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
           {/* Feature 1 */}
           <div className="text-center">
             <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Scissors className="w-8 h-8 text-orange-600" />
+              <FaCut className="w-8 h-8 text-orange-600" />
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-3">
               Expert Craftsmanship
@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
           {/* Feature 2 */}
           <div className="text-center">
             <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Ruler className="w-8 h-8 text-orange-600" />
+              <FaRuler className="w-8 h-8 text-orange-600" />
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-3">
               Perfect Fit Guarantee
@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
           {/* Feature 3 */}
           <div className="text-center">
             <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Shirt className="w-8 h-8 text-orange-600" />
+              <FaTshirt className="w-8 h-8 text-orange-600" />
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-3">
               Wide Range of Services
@@ -56,7 +56,7 @@ const WhyChooseUs = () => {
           {/* Feature 4 */}
           <div className="text-center">
             <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Package className="w-8 h-8 text-orange-600" />
+              <FaBoxOpen className="w-8 h-8 text-orange-600" />
             </div>
             <h3 className="text-xl font-bold text-gray-800 mb-3">
               On-Time Delivery
