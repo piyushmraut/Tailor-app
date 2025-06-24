@@ -1,4 +1,4 @@
-import { Scissors, Ruler, Shirt, Package } from "lucide-react";
+import { Scissors, Ruler, Shirt, Package } from 'lucide-react';
 
 const WhyChooseUs = () => {
   return (
